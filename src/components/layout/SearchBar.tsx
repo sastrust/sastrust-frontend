@@ -8,7 +8,7 @@ export default function SearchBar({
   buttonText: string;
 }) {
   return (
-    <form role="search" aria-label="Site search" className="search">
+    <form role="search" aria-label={placeholder} className="search">
       <input type="search" name="q" aria-label={placeholder} placeholder={placeholder} />
       <button type="submit">{buttonText}</button>
     </form>

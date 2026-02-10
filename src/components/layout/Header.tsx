@@ -18,6 +18,8 @@ export default function Header({
     contact: string;
     searchPlaceholder: string;
     searchButton: string;
+    primaryNavAriaLabel: string;
+    languageSelectorAriaLabel: string;
   };
 }) {
   const base = locale === DEFAULT_LOCALE ? "" : `/${locale}`;
@@ -31,20 +33,24 @@ export default function Header({
             {/* Brand/Logo placeholder */}
             <Link href={base || "/"} className="brand-mark">
               <span className="brand-logo brand-logo-dark">
-                <Image src="/logo.svg" alt="Sastrust" width={180} height={48} />
+                <Image src="/logo.svg" alt="Sastrust" width={220} height={58} />
               </span>
               <span className="brand-logo brand-logo-light">
-                <Image src="/logo-white.svg" alt="Sastrust" width={180} height={48} />
+                <Image src="/logo-white.svg" alt="Sastrust" width={220} height={58} />
               </span>
             </Link>
           </div>
-          <NavMenu locale={locale} labels={nav} />
+          <NavMenu
+            locale={locale}
+            ariaLabel={nav.primaryNavAriaLabel}
+            labels={nav}
+          />
           <div className="header-actions">
             <SearchBar
               placeholder={nav.searchPlaceholder}
               buttonText={nav.searchButton}
             />
-            <LanguageSwitcher />
+            <LanguageSwitcher ariaLabel={nav.languageSelectorAriaLabel} />
           </div>
         </div>
       </div>

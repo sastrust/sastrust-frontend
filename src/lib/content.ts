@@ -20,6 +20,8 @@ const normalizeContent = (raw: any) => {
       contact: asString(raw?.navigation?.contact),
       searchPlaceholder: asString(raw?.navigation?.searchPlaceholder),
       searchButton: asString(raw?.navigation?.searchButton),
+      primaryNavAriaLabel: asString(raw?.navigation?.primaryNavAriaLabel),
+      languageSelectorAriaLabel: asString(raw?.navigation?.languageSelectorAriaLabel),
     },
     components: {
       hero: {
@@ -118,6 +120,24 @@ const normalizeContent = (raw: any) => {
           ctaText: asString((item as any)?.ctaText),
           imageUrl: asString((item as any)?.imageUrl ?? (item as any)?.imageLabel),
         })),
+      },
+      footer: {
+        brandTitle: asString(components.footer?.brandTitle),
+        brandBody: asString(components.footer?.brandBody),
+        pagesTitle: asString(components.footer?.pagesTitle),
+        contactTitle: asString(components.footer?.contactTitle),
+        email: asString(components.footer?.email),
+        phone: asString(components.footer?.phone),
+      },
+      cookieConsent: {
+        ariaLabel: asString(components.cookieConsent?.ariaLabel),
+        body: asString(components.cookieConsent?.body),
+        acceptText: asString(components.cookieConsent?.acceptText),
+        declineText: asString(components.cookieConsent?.declineText),
+      },
+      backToTop: {
+        ariaLabel: asString(components.backToTop?.ariaLabel),
+        text: asString(components.backToTop?.text),
       },
       contactForm: {
         eyebrow: asString(components.contactForm?.eyebrow),

@@ -7,7 +7,17 @@ const CONSENT_KEY = "cookie_consent";
 
 type ConsentValue = "accepted" | "declined" | null;
 
-export default function CookieConsent() {
+export default function CookieConsent({
+  ariaLabel,
+  body,
+  acceptText,
+  declineText,
+}: {
+  ariaLabel: string;
+  body: string;
+  acceptText: string;
+  declineText: string;
+}) {
   const [consent, setConsent] = useState<ConsentValue>(null);
 
   useEffect(() => {
@@ -27,7 +37,12 @@ export default function CookieConsent() {
   }
 
   return (
-    <div role="dialog" aria-live="polite" aria-label="Cookie consent">
+    <div
+      role="dialog"
+      aria-live="polite"
+      aria-label={ariaLabel}
+      className="cookie-consent"
+    >
       {/*
         Cookie Consent (best practice):
         - Essential cookies always on.
@@ -35,13 +50,14 @@ export default function CookieConsent() {
         - Decline keeps site fully usable.
       */}
       <div>
-        <p>
-          Zorunlu çerezler her zaman aktiftir. Analitik ve pazarlama çerezleri
-          yalnızca izin verdiğinizde çalışır.
-        </p>
+        <p>{body}</p>
         <div>
-          <button type="button" onClick={() => handleChoice("accepted")}>Accept</button>
-          <button type="button" onClick={() => handleChoice("declined")}>Decline</button>
+          <button type="button" onClick={() => handleChoice("accepted")}>
+            {acceptText}
+          </button>
+          <button type="button" onClick={() => handleChoice("declined")}>
+            {declineText}
+          </button>
         </div>
       </div>
     </div>

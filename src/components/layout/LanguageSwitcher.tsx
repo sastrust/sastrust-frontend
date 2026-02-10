@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { DEFAULT_LOCALE, SUPPORTED_LOCALES, type Locale } from "../../lib/i18n";
 
-export default function LanguageSwitcher() {
+export default function LanguageSwitcher({ ariaLabel }: { ariaLabel: string }) {
   const pathname = usePathname() || "/tr";
   const parts = pathname.split("/");
   const segment = parts[1] as Locale | undefined;
@@ -28,7 +28,7 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div aria-label="Language selector" className="lang">
+    <div aria-label={ariaLabel} className="lang">
       <Link href={makeHref("tr")} aria-current={current === "tr" ? "page" : undefined}>
         TR
       </Link>

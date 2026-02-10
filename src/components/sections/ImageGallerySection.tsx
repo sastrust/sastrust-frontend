@@ -25,7 +25,7 @@ export default function ImageGallerySection({
               {item.imageUrl ? (
                 <Image
                   src={item.imageUrl}
-                  alt={`Gallery image ${index + 1}`}
+                  alt={`${title} ${index + 1}`}
                   fill
                   sizes="(max-width: 900px) 50vw, 25vw"
                   className="media-img"

@@ -5,15 +5,17 @@ import { DEFAULT_LOCALE } from "../../lib/i18n";
 
 export default function NavMenu({
   locale,
+  ariaLabel,
   labels,
 }: {
   locale: string;
+  ariaLabel: string;
   labels: { home: string; about: string; products: string; contact: string };
 }) {
   const base = locale === DEFAULT_LOCALE ? "" : `/${locale}`;
 
   return (
-    <nav aria-label="Primary" className="nav">
+    <nav aria-label={ariaLabel} className="nav">
       <ul className="nav-list">
         <li>
           <Link href={base || "/"}>{labels.home}</Link>

@@ -5,7 +5,9 @@
     "products": "Ürünler",
     "contact": "İletişim",
     "searchPlaceholder": "Ara",
-    "searchButton": "Ara"
+    "searchButton": "Ara",
+    "primaryNavAriaLabel": "Ana gezinme",
+    "languageSelectorAriaLabel": "Dil seçici"
   },
   "components": {
     "hero": {
@@ -189,6 +191,24 @@
           "imageUrl": "/components/cta-grid/cta-3.svg"
         }
       ]
+    },
+    "footer": {
+      "brandTitle": "Sastrust",
+      "brandBody": "Gömlekte görünmeyen kaliteyi tasarlayan tela çözümleri.",
+      "pagesTitle": "Sayfalar",
+      "contactTitle": "İletişim",
+      "email": "info@sastrust.com",
+      "phone": "+90 000 000 0000"
+    },
+    "cookieConsent": {
+      "ariaLabel": "Çerez izin penceresi",
+      "body": "Zorunlu çerezler her zaman aktiftir. Analitik ve pazarlama çerezleri yalnızca izin verdiğinizde çalışır.",
+      "acceptText": "Kabul Et",
+      "declineText": "Reddet"
+    },
+    "backToTop": {
+      "ariaLabel": "Sayfa başına dön",
+      "text": "Başa dön"
     },
     "origin": {
       "body": "Bizim hikayemiz, atölyeye geri döndüğümüzde başladı. Büyük markalar için çalışarak gömleğin gerçek kalitesini belirleyen şeyin görünmeyen katmanlar olduğunu öğrendik. Lüks bir duruşu erişilebilir kılmak için, telayı görünmez ama vazgeçilmez bir yapı taşı olarak ele aldık. Çünkü herkes, yakası düzgün duran, çizgisi net bir gömleği hak eder."

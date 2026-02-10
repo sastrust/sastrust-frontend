@@ -5,7 +5,9 @@
     "products": "Products",
     "contact": "Contact",
     "searchPlaceholder": "Search",
-    "searchButton": "Search"
+    "searchButton": "Search",
+    "primaryNavAriaLabel": "Primary navigation",
+    "languageSelectorAriaLabel": "Language selector"
   },
   "components": {
     "hero": {
@@ -189,6 +191,24 @@
           "imageUrl": "/components/cta-grid/cta-3.svg"
         }
       ]
+    },
+    "footer": {
+      "brandTitle": "Sastrust",
+      "brandBody": "Interlining solutions engineered for the shirt details that shape final quality.",
+      "pagesTitle": "Pages",
+      "contactTitle": "Contact",
+      "email": "info@sastrust.com",
+      "phone": "+90 000 000 0000"
+    },
+    "cookieConsent": {
+      "ariaLabel": "Cookie consent dialog",
+      "body": "Essential cookies are always active. Analytics and marketing cookies run only when you allow them.",
+      "acceptText": "Accept",
+      "declineText": "Decline"
+    },
+    "backToTop": {
+      "ariaLabel": "Back to top",
+      "text": "Top"
     },
     "origin": {
       "body": "We started when we brought our work back home. After years inside major brands, we learned that the true quality of a shirt is set by the unseen layers. We treat interlining as a silent but essential structure that makes premium stance accessible. Because everyone deserves a shirt with a clean line and a confident collar."

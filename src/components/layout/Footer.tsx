@@ -1,30 +1,60 @@
 // File: src/components/layout/Footer.tsx
-export default function Footer() {
+import Link from "next/link";
+import { DEFAULT_LOCALE } from "../../lib/i18n";
+
+export default function Footer({
+  locale,
+  nav,
+  footer,
+}: {
+  locale: string;
+  nav: {
+    home: string;
+    about: string;
+    products: string;
+    contact: string;
+  };
+  footer: {
+    brandTitle: string;
+    brandBody: string;
+    pagesTitle: string;
+    contactTitle: string;
+    email: string;
+    phone: string;
+  };
+}) {
+  const base = locale === DEFAULT_LOCALE ? "" : `/${locale}`;
+
   return (
     <footer>
       <div className="container">
         <div className="footer-grid">
-          {/* Footer columns placeholder */}
           <div>
-            <div className="footer-title">Brand</div>
-            <p className="footer-text">
-              Editorial, minimal, and focused on clarity.
-            </p>
+            <div className="footer-title">{footer.brandTitle}</div>
+            <p className="footer-text">{footer.brandBody}</p>
           </div>
           <div>
-            <div className="footer-title">Pages</div>
+            <div className="footer-title">{footer.pagesTitle}</div>
             <ul className="footer-list">
-              <li>Home</li>
-              <li>About</li>
-              <li>Products</li>
-              <li>Contact</li>
+              <li>
+                <Link href={`${base}/`}>{nav.home}</Link>
+              </li>
+              <li>
+                <Link href={`${base}/about`}>{nav.about}</Link>
+              </li>
+              <li>
+                <Link href={`${base}/products`}>{nav.products}</Link>
+              </li>
+              <li>
+                <Link href={`${base}/contact`}>{nav.contact}</Link>
+              </li>
             </ul>
           </div>
           <div>
-            <div className="footer-title">Contact</div>
+            <div className="footer-title">{footer.contactTitle}</div>
             <ul className="footer-list">
-              <li>info@example.com</li>
-              <li>+90 000 000 0000</li>
+              <li>{footer.email}</li>
+              <li>{footer.phone}</li>
             </ul>
           </div>
         </div>
