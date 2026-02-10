@@ -1,0 +1,102 @@
+{
+  "eyebrow": "Ürünler",
+  "title": "Gömlek telaları",
+  "filterLabel": "Filtre",
+  "sortLabel": "Sırala",
+  "filters": [
+    {
+      "title": "Ağırlık",
+      "options": [
+        "Hafif",
+        "Orta",
+        "Tok"
+      ]
+    },
+    {
+      "title": "Uygulama",
+      "options": [
+        "Yaka",
+        "Manşet",
+        "Pat"
+      ]
+    },
+    {
+      "title": "Yapı",
+      "options": [
+        "Non‑woven",
+        "Dokuma"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "slug": "hafif-tela-25",
+      "title": "Hafif Tela 25",
+      "subtitle": "Günlük gömlekler için esnek duruş",
+      "imageUrl": "/components/products/Product-1/grid.svg",
+      "detail": {
+        "eyebrow": "Hafif Seri",
+        "title": "Hafif Tela 25",
+        "body": "Günlük kullanımda doğal duruş ve rahatlık için. Yaka ve manşete fazla sertlik katmadan form verir.",
+        "bullets": [
+          "Yumuşak duruş",
+          "Düşük sertlik hissi",
+          "Seri üretime uygun"
+        ],
+        "buttonText": "Numune iste",
+        "mainImageUrl": "/components/products/Product-1/main.svg",
+        "gallery": [
+          "/components/products/Product-1/gallery-1.svg",
+          "/components/products/Product-1/gallery-2.svg",
+          "/components/products/Product-1/gallery-3.svg"
+        ]
+      }
+    },
+    {
+      "slug": "orta-tela-45",
+      "title": "Orta Tela 45",
+      "subtitle": "Dengeli sertlik, net çizgi",
+      "imageUrl": "/components/products/Product-2/grid.svg",
+      "detail": {
+        "eyebrow": "Denge Serisi",
+        "title": "Orta Tela 45",
+        "body": "Dengeli sertlik ile net görünüm sağlar. Yaka ve manşette çizgiyi belirginleştirir.",
+        "bullets": [
+          "Net çizgi",
+          "Dengeli sertlik",
+          "Tutarlı sonuç"
+        ],
+        "buttonText": "Numune iste",
+        "mainImageUrl": "/components/products/Product-2/main.svg",
+        "gallery": [
+          "/components/products/Product-2/gallery-1.svg",
+          "/components/products/Product-2/gallery-2.svg",
+          "/components/products/Product-2/gallery-3.svg"
+        ]
+      }
+    },
+    {
+      "slug": "dokuma-tela-60",
+      "title": "Dokuma Tela 60",
+      "subtitle": "Tok duruş, premium görünüm",
+      "imageUrl": "/components/products/Product-3/grid.svg",
+      "detail": {
+        "eyebrow": "Dokuma Seri",
+        "title": "Dokuma Tela 60",
+        "body": "Premium gömleklerde tok ve kalıcı duruş için. Özellikle yaka ve manşette güçlü form sağlar.",
+        "bullets": [
+          "Tok duruş",
+          "Yüksek form",
+          "Premium his"
+        ],
+        "buttonText": "Numune iste",
+        "mainImageUrl": "/components/products/Product-3/main.svg",
+        "gallery": [
+          "/components/products/Product-3/gallery-1.svg",
+          "/components/products/Product-3/gallery-2.svg",
+          "/components/products/Product-3/gallery-3.svg"
+        ]
+      }
+    }
+  ]
+}

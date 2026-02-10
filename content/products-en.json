@@ -1,0 +1,102 @@
+{
+  "eyebrow": "Products",
+  "title": "Interlinings for shirts",
+  "filterLabel": "Filter",
+  "sortLabel": "Sort",
+  "filters": [
+    {
+      "title": "Weight",
+      "options": [
+        "Light",
+        "Medium",
+        "Crisp"
+      ]
+    },
+    {
+      "title": "Application",
+      "options": [
+        "Collar",
+        "Cuff",
+        "Placket"
+      ]
+    },
+    {
+      "title": "Structure",
+      "options": [
+        "Non‑woven",
+        "Woven"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "slug": "lightweight-25",
+      "title": "Lightweight 25",
+      "subtitle": "Flexible stance for daily shirts",
+      "imageUrl": "/components/products/Product-1/grid.svg",
+      "detail": {
+        "eyebrow": "Light Series",
+        "title": "Lightweight 25",
+        "body": "Natural stance and comfort for everyday wear. Adds form to collar and cuff without harshness.",
+        "bullets": [
+          "Soft stance",
+          "Low harshness",
+          "Production‑friendly"
+        ],
+        "buttonText": "Request sample",
+        "mainImageUrl": "/components/products/Product-1/main.svg",
+        "gallery": [
+          "/components/products/Product-1/gallery-1.svg",
+          "/components/products/Product-1/gallery-2.svg",
+          "/components/products/Product-1/gallery-3.svg"
+        ]
+      }
+    },
+    {
+      "slug": "medium-45",
+      "title": "Medium 45",
+      "subtitle": "Balanced stiffness, clean line",
+      "imageUrl": "/components/products/Product-2/grid.svg",
+      "detail": {
+        "eyebrow": "Balance Series",
+        "title": "Medium 45",
+        "body": "Balanced stiffness for a crisp look. Defines collar and cuff lines with consistency.",
+        "bullets": [
+          "Clean line",
+          "Balanced stiffness",
+          "Consistent results"
+        ],
+        "buttonText": "Request sample",
+        "mainImageUrl": "/components/products/Product-2/main.svg",
+        "gallery": [
+          "/components/products/Product-2/gallery-1.svg",
+          "/components/products/Product-2/gallery-2.svg",
+          "/components/products/Product-2/gallery-3.svg"
+        ]
+      }
+    },
+    {
+      "slug": "woven-60",
+      "title": "Woven 60",
+      "subtitle": "Crisp stance, premium finish",
+      "imageUrl": "/components/products/Product-3/grid.svg",
+      "detail": {
+        "eyebrow": "Woven Series",
+        "title": "Woven 60",
+        "body": "For premium shirts that require a firm, lasting stance. Strong structure for collars and cuffs.",
+        "bullets": [
+          "Crisp stance",
+          "High form",
+          "Premium feel"
+        ],
+        "buttonText": "Request sample",
+        "mainImageUrl": "/components/products/Product-3/main.svg",
+        "gallery": [
+          "/components/products/Product-3/gallery-1.svg",
+          "/components/products/Product-3/gallery-2.svg",
+          "/components/products/Product-3/gallery-3.svg"
+        ]
+      }
+    }
+  ]
+}

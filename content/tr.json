@@ -1,0 +1,232 @@
+{
+  "navigation": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "products": "Ürünler",
+    "contact": "İletişim",
+    "searchPlaceholder": "Ara",
+    "searchButton": "Ara"
+  },
+  "components": {
+    "hero": {
+      "title": "Behind the seen — gömleğin duruşunu görünmeden kurarız.",
+      "imageUrl": "/components/hero/hero-1.svg"
+    },
+    "editorial": {
+      "eyebrow": "Neden Tela",
+      "title": "Yaka ve manşetin duruşu, kumaşın içindeki sessiz mimariden gelir.",
+      "body": "Tela görünmez; ama doğru seçildiğinde gömleğin formunu, netliğini ve konforunu belirler. Non‑woven telalarımız, bitmiş ürünün duruşunu iyileştirmek için tasarlanır.",
+      "imageUrl": "/components/editorial/editorial-1.svg"
+    },
+    "statement": {
+      "eyebrow": "Duruş",
+      "title": "İyi bir gömlek, içten desteklenir.",
+      "body": "Biz kumaşın değil, bitmiş gömleğin kalitesini yükseltiriz. Sertlik değil; doğru destek, temiz çizgi ve tutarlılık üretiriz.",
+      "highlight": "Behind the seen"
+    },
+    "valuesGrid": {
+      "eyebrow": "Temel Değerler",
+      "title": "Gömleğin çizgisini kuran görünmez standartlar",
+      "items": [
+        {
+          "title": "Form",
+          "body": "Yaka ve manşette istenen çizgiyi belirler, kırışıksız bir duruş sağlar.",
+          "imageUrl": "/components/values-grid/value-1.svg"
+        },
+        {
+          "title": "Tutarlılık",
+          "body": "Partiler arasında aynı hissi ve aynı kaliteyi korur.",
+          "imageUrl": "/components/values-grid/value-2.svg"
+        },
+        {
+          "title": "Konfor",
+          "body": "Duruşu korurken sertlik hissini azaltır.",
+          "imageUrl": "/components/values-grid/value-3.svg"
+        }
+      ]
+    },
+    "productTeaser": {
+      "eyebrow": "Ürün Ailesi",
+      "title": "Gömlek telaları: hafiften tok duruşa",
+      "body": "Yaka, manşet ve pat için farklı gramaj ve karakterlerde telalar. Üretim tarzınıza uygun seçenekler.",
+      "ctaText": "Ürünleri keşfet",
+      "imageUrl": "/components/product-teaser/teaser-1.svg"
+    },
+    "transparency": {
+      "eyebrow": "Yapı",
+      "title": "Yakanın mimarisi, katmanlarda kurulur",
+      "body": "Bir telanın davranışı; lif yapısı, bağlayıcı oranı ve ısı uygulamasının dengesinden doğar.",
+      "totalLabel": "Toplam etki",
+      "cards": [
+        {
+          "label": "Yumuşak duruş",
+          "rows": [
+            {
+              "label": "Non‑woven taban",
+              "value": "45%"
+            },
+            {
+              "label": "Bağlayıcı",
+              "value": "20%"
+            },
+            {
+              "label": "Isı‑basınç",
+              "value": "20%"
+            },
+            {
+              "label": "Bitim",
+              "value": "15%"
+            }
+          ],
+          "total": "100%"
+        },
+        {
+          "label": "Keskin duruş",
+          "rows": [
+            {
+              "label": "Non‑woven taban",
+              "value": "35%"
+            },
+            {
+              "label": "Bağlayıcı",
+              "value": "30%"
+            },
+            {
+              "label": "Isı‑basınç",
+              "value": "20%"
+            },
+            {
+              "label": "Bitim",
+              "value": "15%"
+            }
+          ],
+          "total": "100%"
+        }
+      ]
+    },
+    "supplyChain": {
+      "eyebrow": "Süreç",
+      "title": "Liften yaka duruşuna",
+      "body": "Tela üretimi, malzeme seçimiyle başlar; reçine ve ısı bağlama dengesiyle karakter kazanır.",
+      "steps": [
+        {
+          "title": "Elyaf seçimi",
+          "body": "İstenen form ve esneme için lif karışımı belirlenir."
+        },
+        {
+          "title": "Bağlama",
+          "body": "Reçine dağılımı, telanın sertlik ve dayanımını ayarlar."
+        },
+        {
+          "title": "Test",
+          "body": "Yıkama, ısı ve yapışma testleriyle tutarlılık doğrulanır."
+        }
+      ],
+      "note": "Her parti kontrol edilir"
+    },
+    "pillars": {
+      "eyebrow": "Prensipler",
+      "title": "Görünmeyen kaliteyi görünür kılan üç başlık",
+      "items": [
+        {
+          "title": "Dayanım",
+          "body": "Yaka ve manşette formu uzun süre korur.",
+          "imageUrl": "/components/pillars/pillar-1.svg"
+        },
+        {
+          "title": "Dengeli sertlik",
+          "body": "Tok duruşu, rahatsızlık vermeden sağlar.",
+          "imageUrl": "/components/pillars/pillar-2.svg"
+        },
+        {
+          "title": "Temiz çizgi",
+          "body": "Dikiş boyunca net bir görünüm üretir.",
+          "imageUrl": "/components/pillars/pillar-3.svg"
+        }
+      ]
+    },
+    "packaging": {
+      "eyebrow": "Sevkiyat",
+      "title": "Formu koruyan sarım",
+      "body": "Rulo sarım ve stabil koşullar, telanın performansını üretime kadar korur.",
+      "imageUrl": "/components/packaging/packaging-1.svg"
+    },
+    "gallery": {
+      "eyebrow": "Detay",
+      "title": "Bitmiş üründe görünen etki",
+      "items": [
+        {
+          "imageUrl": "/components/gallery/gallery-1.svg"
+        },
+        {
+          "imageUrl": "/components/gallery/gallery-2.svg"
+        },
+        {
+          "imageUrl": "/components/gallery/gallery-3.svg"
+        },
+        {
+          "imageUrl": "/components/gallery/gallery-4.svg"
+        }
+      ]
+    },
+    "ctaGrid": {
+      "eyebrow": "Birlikte Üretelim",
+      "title": "Gömlek üreticileri için güvenilir tela",
+      "items": [
+        {
+          "title": "Numune talebi",
+          "ctaText": "İletişime geç",
+          "imageUrl": "/components/cta-grid/cta-1.svg"
+        },
+        {
+          "title": "Teknik danışma",
+          "ctaText": "İletişime geç",
+          "imageUrl": "/components/cta-grid/cta-2.svg"
+        },
+        {
+          "title": "Özel kesim",
+          "ctaText": "İletişime geç",
+          "imageUrl": "/components/cta-grid/cta-3.svg"
+        }
+      ]
+    },
+    "origin": {
+      "body": "Bizim hikayemiz, atölyeye geri döndüğümüzde başladı. Büyük markalar için çalışarak gömleğin gerçek kalitesini belirleyen şeyin görünmeyen katmanlar olduğunu öğrendik. Lüks bir duruşu erişilebilir kılmak için, telayı görünmez ama vazgeçilmez bir yapı taşı olarak ele aldık. Çünkü herkes, yakası düzgün duran, çizgisi net bir gömleği hak eder."
+    },
+    "valuesThree": {
+      "title": "Değerlerimiz",
+      "items": [
+        {
+          "title": "Kalite",
+          "body": "Kalite bir ayrıcalık olmamalı. Telalarımız doğru formu ve dayanımı üretmek için seçilmiş malzemelerle hazırlanır."
+        },
+        {
+          "title": "Sürdürülebilirlik",
+          "body": "Mümkün olduğunda çevresel etkisi düşük materyaller ve üretim pratikleri kullanırız."
+        },
+        {
+          "title": "Erişilebilirlik",
+          "body": "Güçlü duruşu makul maliyetle sunarız. Üretici için verimli, marka için erişilebilir çözümler üretiriz."
+        }
+      ]
+    },
+    "contactForm": {
+      "eyebrow": "İletişim",
+      "title": "Numune ve teknik bilgi için bize yazın",
+      "body": "Ürün tipi, kullanım alanı ve hedef duruşu belirtin; en uygun tela seçeneklerini paylaşalım.",
+      "fields": {
+        "name": "Ad Soyad",
+        "email": "E‑posta",
+        "message": "Mesaj"
+      },
+      "recaptchaLabel": "reCAPTCHA",
+      "submitText": "Gönder"
+    },
+    "map": {
+      "eyebrow": "Konum",
+      "title": "Atölye ve üretim hattı",
+      "body": "Randevu ile ziyaret edebilirsiniz.",
+      "mapLabel": "Harita"
+    }
+  }
+}

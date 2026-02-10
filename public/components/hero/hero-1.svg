@@ -1,0 +1,5 @@
+<svg width="3000" height="1600" viewBox="0 0 3000 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="3000" height="1600" fill="#e7d9c8"/>
+  <rect x="96" y="96" width="2808" height="1408" rx="24" fill="#f6efe6" stroke="#d6c7b7" stroke-width="2"/>
+  <text x="96" y="1552" fill="#5a4a3a" font-family="Arial" font-size="32">Hero 1</text>
+</svg>

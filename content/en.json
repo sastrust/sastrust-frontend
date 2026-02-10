@@ -1,0 +1,232 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact",
+    "searchPlaceholder": "Search",
+    "searchButton": "Search"
+  },
+  "components": {
+    "hero": {
+      "title": "Behind the seen — we build the shirt’s stance from within.",
+      "imageUrl": "/components/hero/hero-1.svg"
+    },
+    "editorial": {
+      "eyebrow": "Why Interlining",
+      "title": "Collars and cuffs hold their line thanks to an unseen structure.",
+      "body": "Interlining is invisible, but it defines the garment’s shape. Our non‑woven interlinings are engineered to improve the final product’s stance and comfort.",
+      "imageUrl": "/components/editorial/editorial-1.svg"
+    },
+    "statement": {
+      "eyebrow": "Stance",
+      "title": "A great shirt is supported from the inside.",
+      "body": "We don’t change the fabric — we elevate the finished shirt. Not stiffness, but the right support, clean lines, and consistency.",
+      "highlight": "Behind the seen"
+    },
+    "valuesGrid": {
+      "eyebrow": "Core Values",
+      "title": "Invisible standards that define the line",
+      "items": [
+        {
+          "title": "Form",
+          "body": "Sets the line of collar and cuff with a stable structure.",
+          "imageUrl": "/components/values-grid/value-1.svg"
+        },
+        {
+          "title": "Consistency",
+          "body": "Keeps the same touch and behavior across runs.",
+          "imageUrl": "/components/values-grid/value-2.svg"
+        },
+        {
+          "title": "Comfort",
+          "body": "Maintains stance while reducing harshness.",
+          "imageUrl": "/components/values-grid/value-3.svg"
+        }
+      ]
+    },
+    "productTeaser": {
+      "eyebrow": "Product Family",
+      "title": "Interlinings for every shirt build",
+      "body": "From lightweight to crisp, tailored for collars, cuffs, and plackets.",
+      "ctaText": "Explore products",
+      "imageUrl": "/components/product-teaser/teaser-1.svg"
+    },
+    "transparency": {
+      "eyebrow": "Structure",
+      "title": "A collar’s architecture is built in layers",
+      "body": "Performance comes from balancing fiber, binder, and heat bonding.",
+      "totalLabel": "Total effect",
+      "cards": [
+        {
+          "label": "Soft stance",
+          "rows": [
+            {
+              "label": "Non‑woven base",
+              "value": "45%"
+            },
+            {
+              "label": "Binder",
+              "value": "20%"
+            },
+            {
+              "label": "Heat + pressure",
+              "value": "20%"
+            },
+            {
+              "label": "Finish",
+              "value": "15%"
+            }
+          ],
+          "total": "100%"
+        },
+        {
+          "label": "Crisp stance",
+          "rows": [
+            {
+              "label": "Non‑woven base",
+              "value": "35%"
+            },
+            {
+              "label": "Binder",
+              "value": "30%"
+            },
+            {
+              "label": "Heat + pressure",
+              "value": "20%"
+            },
+            {
+              "label": "Finish",
+              "value": "15%"
+            }
+          ],
+          "total": "100%"
+        }
+      ]
+    },
+    "supplyChain": {
+      "eyebrow": "Process",
+      "title": "From fiber to collar stance",
+      "body": "Material choice and bonding balance define the interlining’s behavior.",
+      "steps": [
+        {
+          "title": "Fiber selection",
+          "body": "Blend tuned for form and recovery."
+        },
+        {
+          "title": "Bonding",
+          "body": "Binder distribution sets stiffness and durability."
+        },
+        {
+          "title": "Testing",
+          "body": "Wash, heat, and adhesion tests ensure consistency."
+        }
+      ],
+      "note": "Every batch is verified"
+    },
+    "pillars": {
+      "eyebrow": "Principles",
+      "title": "Three ways we make the invisible visible",
+      "items": [
+        {
+          "title": "Durability",
+          "body": "Keeps collar and cuff form over time.",
+          "imageUrl": "/components/pillars/pillar-1.svg"
+        },
+        {
+          "title": "Balanced stiffness",
+          "body": "Crisp shape without harshness.",
+          "imageUrl": "/components/pillars/pillar-2.svg"
+        },
+        {
+          "title": "Clean line",
+          "body": "Delivers a precise finish along every seam.",
+          "imageUrl": "/components/pillars/pillar-3.svg"
+        }
+      ]
+    },
+    "packaging": {
+      "eyebrow": "Delivery",
+      "title": "Form‑preserving rolls",
+      "body": "Stable storage and roll handling keep performance intact up to production.",
+      "imageUrl": "/components/packaging/packaging-1.svg"
+    },
+    "gallery": {
+      "eyebrow": "Detail",
+      "title": "The effect in the finished garment",
+      "items": [
+        {
+          "imageUrl": "/components/gallery/gallery-1.svg"
+        },
+        {
+          "imageUrl": "/components/gallery/gallery-2.svg"
+        },
+        {
+          "imageUrl": "/components/gallery/gallery-3.svg"
+        },
+        {
+          "imageUrl": "/components/gallery/gallery-4.svg"
+        }
+      ]
+    },
+    "ctaGrid": {
+      "eyebrow": "Let’s Build",
+      "title": "Interlining you can rely on",
+      "items": [
+        {
+          "title": "Request samples",
+          "ctaText": "Contact us",
+          "imageUrl": "/components/cta-grid/cta-1.svg"
+        },
+        {
+          "title": "Technical consult",
+          "ctaText": "Contact us",
+          "imageUrl": "/components/cta-grid/cta-2.svg"
+        },
+        {
+          "title": "Custom cutting",
+          "ctaText": "Contact us",
+          "imageUrl": "/components/cta-grid/cta-3.svg"
+        }
+      ]
+    },
+    "origin": {
+      "body": "We started when we brought our work back home. After years inside major brands, we learned that the true quality of a shirt is set by the unseen layers. We treat interlining as a silent but essential structure that makes premium stance accessible. Because everyone deserves a shirt with a clean line and a confident collar."
+    },
+    "valuesThree": {
+      "title": "Our values",
+      "items": [
+        {
+          "title": "Quality",
+          "body": "Quality shouldn’t be a luxury. We use carefully selected materials to deliver reliable form and durability."
+        },
+        {
+          "title": "Sustainability",
+          "body": "Whenever possible, we choose lower‑impact materials and responsible production practices."
+        },
+        {
+          "title": "Accessibility",
+          "body": "We make a premium stance attainable by keeping production efficient and costs honest."
+        }
+      ]
+    },
+    "contactForm": {
+      "eyebrow": "Contact",
+      "title": "Request samples or technical guidance",
+      "body": "Share your product type, usage area, and desired stance so we can suggest the right interlining.",
+      "fields": {
+        "name": "Full name",
+        "email": "Email",
+        "message": "Message"
+      },
+      "recaptchaLabel": "reCAPTCHA",
+      "submitText": "Send"
+    },
+    "map": {
+      "eyebrow": "Location",
+      "title": "Workshop & production line",
+      "body": "Visits by appointment.",
+      "mapLabel": "Map"
+    }
+  }
+}
