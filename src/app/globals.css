@@ -1,5 +1,4 @@
 /* File: src/app/globals.css */
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap");
 
 :root {
   /* Color system */
@@ -15,12 +14,12 @@
   --accent-strong: #5e4b34;
 
   /* Typography */
-  --font-serif: "Cormorant Garamond", "Times New Roman", serif;
-  --font-sans: "Work Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: Arial, "Helvetica Neue", sans-serif;
 
   /* Layout */
-  --container: 1200px;
-  --gutter: 24px;
+  --container: 1120px;
+  --gutter: clamp(20px, 3.8vw, 56px);
   --radius: 10px;
   --header-height: 76px;
 
@@ -45,6 +44,8 @@
 html,
 body {
   height: 100%;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -53,7 +54,7 @@ body {
   background: var(--paper);
   line-height: 1.8;
   letter-spacing: 0.01em;
-  font-size: 16px;
+  font-size: 15.5px;
   font-weight: 300;
 }
 
@@ -143,6 +144,12 @@ body:has(.hero-fullbleed) .search button {
   background: rgba(255, 255, 255, 0.3);
 }
 
+body:has(.hero-fullbleed) .menu-toggle {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
 .header-row {
   display: grid;
   grid-template-columns: 220px 1fr auto;
@@ -158,6 +165,8 @@ body:has(.hero-fullbleed) .search button {
 
 .brand-logo {
   display: inline-flex;
+  width: 182px;
+  max-width: 100%;
 }
 
 .brand-logo-light {
@@ -172,9 +181,104 @@ body:has(.hero-fullbleed) .search button {
 }
 
 .nav-list a {
-  font-size: 15px;
+  font-size: clamp(12px, 1.05vw, 15px);
   text-transform: uppercase;
   letter-spacing: 0.12em;
+}
+
+.nav-shell {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.menu-toggle-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.nav-mobile {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  min-width: 260px;
+  max-width: min(440px, calc(100vw - 2 * var(--gutter)));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.98);
+  color: var(--ink);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+  padding: 14px 16px;
+  z-index: 120;
+}
+
+.nav-mobile-list {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.nav-mobile-tools {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-mobile-tools .search {
+  width: 100%;
+  background: #fff !important;
+  border-color: var(--line) !important;
+}
+
+.nav-mobile-tools .search input {
+  min-width: 0;
+  width: 100%;
+  color: var(--ink) !important;
+}
+
+.nav-mobile-tools .search button {
+  background: var(--sand) !important;
+  color: var(--ink) !important;
+}
+
+.nav-mobile-tools .lang {
+  justify-content: flex-end;
+  color: var(--ink) !important;
+  white-space: nowrap;
+}
+
+.nav-mobile-tools .lang a,
+.nav-mobile-tools .lang span {
+  color: var(--ink) !important;
+}
+
+.nav-mobile-list a {
+  display: block;
+  color: var(--ink);
+  font-size: 16px;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+  padding: 8px 2px;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .header-actions {
@@ -216,6 +320,72 @@ body:has(.hero-fullbleed) .search button {
   font-size: 12px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+}
+
+@media (max-width: 1280px) {
+  .nav-list {
+    gap: var(--space-5);
+  }
+
+  .nav-list a {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+  }
+}
+
+@media (max-width: 1120px) {
+  .header-row {
+    grid-template-columns: 200px 1fr auto;
+    gap: var(--space-4);
+  }
+
+  .nav-list {
+    gap: 16px;
+  }
+
+  .nav-list a {
+    font-size: 13px;
+    letter-spacing: 0.08em;
+  }
+
+  .search input {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 980px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .header-actions-desktop {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .header-row {
+    grid-template-columns: 1fr auto auto;
+    gap: var(--space-3);
+  }
+
+  .nav-shell {
+    position: static;
+  }
+
+  .nav-mobile {
+    position: fixed;
+    top: calc(var(--header-height) + 14px);
+    left: var(--gutter);
+    right: var(--gutter);
+    min-width: 0;
+    max-width: none;
+    max-height: calc(100svh - var(--header-height) - 2 * var(--space-5));
+    overflow: auto;
+    z-index: 130;
+  }
 }
 
 .container {
@@ -833,6 +1003,17 @@ footer {
   margin-bottom: var(--space-3);
 }
 
+.footer-brand-link {
+  display: inline-flex;
+  margin-bottom: var(--space-3);
+}
+
+.footer-brand-logo {
+  width: 170px;
+  max-width: 100%;
+  height: auto;
+}
+
 .footer-text {
   color: rgba(28, 27, 25, 0.7);
 }
@@ -908,8 +1089,12 @@ body:has(.cookie-consent) .back-to-top {
   }
 
   .header-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
     gap: var(--space-3);
+  }
+
+  .header-actions {
+    grid-column: 1 / -1;
   }
 
   .hero-grid,
@@ -924,6 +1109,11 @@ body:has(.cookie-consent) .back-to-top {
   .header-actions {
     justify-content: flex-start;
     flex-wrap: wrap;
+  }
+
+  .search input {
+    min-width: 0;
+    width: min(100%, 220px);
   }
 
   .footer-grid {

@@ -1,4 +1,5 @@
 // File: src/components/layout/Footer.tsx
+import Image from "next/image";
 import Link from "next/link";
 import { DEFAULT_LOCALE } from "../../lib/i18n";
 
@@ -30,7 +31,15 @@ export default function Footer({
       <div className="container">
         <div className="footer-grid">
           <div>
-            <div className="footer-title">{footer.brandTitle}</div>
+            <Link href={base || "/"} className="footer-brand-link">
+              <Image
+                src="/sastrust-beige-footer.png"
+                alt={footer.brandTitle}
+                width={170}
+                height={58}
+                className="footer-brand-logo"
+              />
+            </Link>
             <p className="footer-text">{footer.brandBody}</p>
           </div>
           <div>

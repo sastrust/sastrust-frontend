@@ -7,7 +7,9 @@
     "searchPlaceholder": "Ara",
     "searchButton": "Ara",
     "primaryNavAriaLabel": "Ana gezinme",
-    "languageSelectorAriaLabel": "Dil seçici"
+    "languageSelectorAriaLabel": "Dil seçici",
+    "mobileMenuOpenLabel": "Menüyü aç",
+    "mobileMenuCloseLabel": "Menüyü kapat"
   },
   "components": {
     "hero": {

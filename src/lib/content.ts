@@ -22,6 +22,8 @@ const normalizeContent = (raw: any) => {
       searchButton: asString(raw?.navigation?.searchButton),
       primaryNavAriaLabel: asString(raw?.navigation?.primaryNavAriaLabel),
       languageSelectorAriaLabel: asString(raw?.navigation?.languageSelectorAriaLabel),
+      mobileMenuOpenLabel: asString(raw?.navigation?.mobileMenuOpenLabel),
+      mobileMenuCloseLabel: asString(raw?.navigation?.mobileMenuCloseLabel),
     },
     components: {
       hero: {

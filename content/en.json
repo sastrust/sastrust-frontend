@@ -7,7 +7,9 @@
     "searchPlaceholder": "Search",
     "searchButton": "Search",
     "primaryNavAriaLabel": "Primary navigation",
-    "languageSelectorAriaLabel": "Language selector"
+    "languageSelectorAriaLabel": "Language selector",
+    "mobileMenuOpenLabel": "Open menu",
+    "mobileMenuCloseLabel": "Close menu"
   },
   "components": {
     "hero": {

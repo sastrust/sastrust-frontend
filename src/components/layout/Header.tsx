@@ -20,6 +20,8 @@ export default function Header({
     searchButton: string;
     primaryNavAriaLabel: string;
     languageSelectorAriaLabel: string;
+    mobileMenuOpenLabel: string;
+    mobileMenuCloseLabel: string;
   };
 }) {
   const base = locale === DEFAULT_LOCALE ? "" : `/${locale}`;
@@ -33,19 +35,34 @@ export default function Header({
             {/* Brand/Logo placeholder */}
             <Link href={base || "/"} className="brand-mark">
               <span className="brand-logo brand-logo-dark">
-                <Image src="/logo.svg" alt="Sastrust" width={220} height={58} />
+                <Image
+                  src="/sastrust-beige-header.png"
+                  alt="Sastrust"
+                  width={182}
+                  height={62}
+                />
               </span>
               <span className="brand-logo brand-logo-light">
-                <Image src="/logo-white.svg" alt="Sastrust" width={220} height={58} />
+                <Image
+                  src="/sastrust-white-header.png"
+                  alt="Sastrust"
+                  width={182}
+                  height={43}
+                />
               </span>
             </Link>
           </div>
           <NavMenu
             locale={locale}
             ariaLabel={nav.primaryNavAriaLabel}
+            openLabel={nav.mobileMenuOpenLabel}
+            closeLabel={nav.mobileMenuCloseLabel}
+            searchPlaceholder={nav.searchPlaceholder}
+            searchButton={nav.searchButton}
+            languageSelectorAriaLabel={nav.languageSelectorAriaLabel}
             labels={nav}
           />
-          <div className="header-actions">
+          <div className="header-actions header-actions-desktop">
             <SearchBar
               placeholder={nav.searchPlaceholder}
               buttonText={nav.searchButton}
