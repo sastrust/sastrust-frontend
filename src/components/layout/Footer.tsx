@@ -22,6 +22,10 @@ export default function Footer({
     contactTitle: string;
     email: string;
     phone: string;
+    designedByPrefix: string;
+    designedByName: string;
+    designedByUrl: string;
+    designedByAriaLabel: string;
   };
 }) {
   const base = locale === DEFAULT_LOCALE ? "" : `/${locale}`;
@@ -35,8 +39,8 @@ export default function Footer({
               <Image
                 src="/sastrust-beige-footer.png"
                 alt={footer.brandTitle}
-                width={170}
-                height={58}
+                width={874}
+                height={285}
                 className="footer-brand-logo"
               />
             </Link>
@@ -66,6 +70,24 @@ export default function Footer({
               <li>{footer.phone}</li>
             </ul>
           </div>
+        </div>
+        <div className="footer-credit">
+          <span>{footer.designedByPrefix}</span>
+          <a
+            href={footer.designedByUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-credit-link"
+            aria-label={footer.designedByAriaLabel}
+          >
+            <Image
+              src="/coreborn-logo.webp"
+              alt={footer.designedByName}
+              width={512}
+              height={88}
+              className="footer-credit-logo"
+            />
+          </a>
         </div>
       </div>
     </footer>

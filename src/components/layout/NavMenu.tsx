@@ -5,8 +5,14 @@
 import Link from "next/link";
 import { useState } from "react";
 import { DEFAULT_LOCALE } from "../../lib/i18n";
+import type { SearchItem } from "../../lib/search";
 import SearchBar from "./SearchBar";
 import LanguageSwitcher from "./LanguageSwitcher";
+
+type ProductSlugMap = {
+  trToEn: Record<string, string>;
+  enToTr: Record<string, string>;
+};
 
 export default function NavMenu({
   locale,
@@ -15,7 +21,10 @@ export default function NavMenu({
   closeLabel,
   searchPlaceholder,
   searchButton,
+  searchItems,
+  searchNoResultsText,
   languageSelectorAriaLabel,
+  productSlugMap,
   labels,
 }: {
   locale: string;
@@ -24,7 +33,10 @@ export default function NavMenu({
   closeLabel: string;
   searchPlaceholder: string;
   searchButton: string;
+  searchItems: SearchItem[];
+  searchNoResultsText: string;
   languageSelectorAriaLabel: string;
+  productSlugMap: ProductSlugMap;
   labels: { home: string; about: string; products: string; contact: string };
 }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,8 +76,18 @@ export default function NavMenu({
       {isOpen ? (
         <nav aria-label={ariaLabel} className="nav-mobile">
           <div className="nav-mobile-tools">
-            <SearchBar placeholder={searchPlaceholder} buttonText={searchButton} />
-            <LanguageSwitcher ariaLabel={languageSelectorAriaLabel} />
+            <SearchBar
+              locale={locale}
+              placeholder={searchPlaceholder}
+              buttonText={searchButton}
+              items={searchItems}
+              noResultsText={searchNoResultsText}
+              onNavigate={() => setIsOpen(false)}
+            />
+            <LanguageSwitcher
+              ariaLabel={languageSelectorAriaLabel}
+              productSlugMap={productSlugMap}
+            />
           </div>
           <ul className="nav-mobile-list">
             <li>

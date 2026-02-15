@@ -18,17 +18,28 @@ export default function CookieConsent({
   acceptText: string;
   declineText: string;
 }) {
+  const [isReady, setIsReady] = useState(false);
   const [consent, setConsent] = useState<ConsentValue>(null);
 
+  // Keep first server/client render identical; read storage right after hydration.
   useEffect(() => {
-    const stored = window.localStorage.getItem(CONSENT_KEY);
-    if (stored === "accepted" || stored === "declined") {
-      setConsent(stored);
-    }
+    const rafId = window.requestAnimationFrame(() => {
+      const stored = window.localStorage.getItem(CONSENT_KEY);
+      if (stored === "accepted" || stored === "declined") {
+        setConsent(stored);
+      }
+      setIsReady(true);
+    });
+
+    return () => window.cancelAnimationFrame(rafId);
   }, []);
 
   const handleChoice = (value: Exclude<ConsentValue, null>) => {
-    window.localStorage.setItem(CONSENT_KEY, value);
+    try {
+      window.localStorage.setItem(CONSENT_KEY, value);
+    } catch {
+      // Ignore storage access errors and still close the banner.
+    }
     setConsent(value);
   };
 
@@ -36,9 +47,14 @@ export default function CookieConsent({
     return null;
   }
 
+  if (!isReady) {
+    return null;
+  }
+
   return (
     <div
       role="dialog"
+      aria-modal="false"
       aria-live="polite"
       aria-label={ariaLabel}
       className="cookie-consent"
@@ -49,13 +65,21 @@ export default function CookieConsent({
         - Analytics/marketing only after accept.
         - Decline keeps site fully usable.
       */}
-      <div>
-        <p>{body}</p>
-        <div>
-          <button type="button" onClick={() => handleChoice("accepted")}>
+      <div className="cookie-consent__inner">
+        <p className="cookie-consent__text">{body}</p>
+        <div className="cookie-consent__actions">
+          <button
+            type="button"
+            className="btn cookie-consent__btn"
+            onClick={() => handleChoice("accepted")}
+          >
             {acceptText}
           </button>
-          <button type="button" onClick={() => handleChoice("declined")}>
+          <button
+            type="button"
+            className="btn btn-ghost cookie-consent__btn"
+            onClick={() => handleChoice("declined")}
+          >
             {declineText}
           </button>
         </div>

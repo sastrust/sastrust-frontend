@@ -17,13 +17,13 @@ export default async function LocaleLayout({
   const content = await getContent(locale);
 
   return (
-    <>
+    <div lang={locale}>
       {/* Layout shell: header + main + footer */}
       <Header locale={locale} nav={content.navigation} />
       <main>{children}</main>
       <Footer locale={locale} nav={content.navigation} footer={content.components.footer} />
       <CookieConsent {...content.components.cookieConsent} />
       <BackToTop {...content.components.backToTop} />
-    </>
+    </div>
   );
 }

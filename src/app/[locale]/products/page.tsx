@@ -1,6 +1,23 @@
 // File: src/app/[locale]/products/page.tsx
+import type { Metadata } from "next";
 import ProductGridSection from "../../../components/sections/ProductGridSection";
 import { getProducts } from "../../../lib/products";
+import { buildPageMetadata, normalizeLocale } from "../../../SEO/metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const normalized = normalizeLocale(locale);
+
+  return buildPageMetadata({
+    locale: normalized,
+    page: "products",
+    routePath: "/products",
+  });
+}
 
 export default async function ProductsPage({
   params,

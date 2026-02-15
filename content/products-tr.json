@@ -30,10 +30,21 @@
   ],
   "products": [
     {
+      "productKey": "shirt-interlining-light-25",
       "slug": "hafif-tela-25",
       "title": "Hafif Tela 25",
       "subtitle": "Günlük gömlekler için esnek duruş",
       "imageUrl": "/components/products/Product-1/grid.svg",
+      "parameters": {
+        "Ağırlık": "Hafif",
+        "Uygulama": [
+          "Yaka",
+          "Manşet",
+          "Pat"
+        ],
+        "Yapı": "Non‑woven",
+        "Duruş": "Esnek"
+      },
       "detail": {
         "eyebrow": "Hafif Seri",
         "title": "Hafif Tela 25",
@@ -53,10 +64,20 @@
       }
     },
     {
+      "productKey": "shirt-interlining-medium-45",
       "slug": "orta-tela-45",
       "title": "Orta Tela 45",
       "subtitle": "Dengeli sertlik, net çizgi",
       "imageUrl": "/components/products/Product-2/grid.svg",
+      "parameters": {
+        "Ağırlık": "Orta",
+        "Uygulama": [
+          "Yaka",
+          "Manşet"
+        ],
+        "Yapı": "Non‑woven",
+        "Duruş": "Dengeli"
+      },
       "detail": {
         "eyebrow": "Denge Serisi",
         "title": "Orta Tela 45",
@@ -76,10 +97,20 @@
       }
     },
     {
+      "productKey": "shirt-interlining-woven-60",
       "slug": "dokuma-tela-60",
       "title": "Dokuma Tela 60",
       "subtitle": "Tok duruş, premium görünüm",
       "imageUrl": "/components/products/Product-3/grid.svg",
+      "parameters": {
+        "Ağırlık": "Tok",
+        "Uygulama": [
+          "Yaka",
+          "Manşet"
+        ],
+        "Yapı": "Dokuma",
+        "Duruş": "Keskin"
+      },
       "detail": {
         "eyebrow": "Dokuma Seri",
         "title": "Dokuma Tela 60",

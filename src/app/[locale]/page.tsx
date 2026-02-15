@@ -1,4 +1,5 @@
 // File: src/app/[locale]/page.tsx
+import type { Metadata } from "next";
 import HeroSection from "../../components/sections/HeroSection";
 import OriginSection from "../../components/sections/OriginSection";
 import ValuesThreeSection from "../../components/sections/ValuesThreeSection";
@@ -11,6 +12,22 @@ import PackagingSection from "../../components/sections/PackagingSection";
 import ImageGallerySection from "../../components/sections/ImageGallerySection";
 import CtaGridSection from "../../components/sections/CtaGridSection";
 import { getContent } from "../../lib/content";
+import { buildPageMetadata, normalizeLocale } from "../../SEO/metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const normalized = normalizeLocale(locale);
+
+  return buildPageMetadata({
+    locale: normalized,
+    page: "home",
+    routePath: "/",
+  });
+}
 
 export default async function HomePage({
   params,

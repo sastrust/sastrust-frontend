@@ -30,10 +30,21 @@
   ],
   "products": [
     {
+      "productKey": "shirt-interlining-light-25",
       "slug": "lightweight-25",
       "title": "Lightweight 25",
       "subtitle": "Flexible stance for daily shirts",
       "imageUrl": "/components/products/Product-1/grid.svg",
+      "parameters": {
+        "Weight": "Light",
+        "Application": [
+          "Collar",
+          "Cuff",
+          "Placket"
+        ],
+        "Structure": "Non‑woven",
+        "Stance": "Flexible"
+      },
       "detail": {
         "eyebrow": "Light Series",
         "title": "Lightweight 25",
@@ -53,10 +64,20 @@
       }
     },
     {
+      "productKey": "shirt-interlining-medium-45",
       "slug": "medium-45",
       "title": "Medium 45",
       "subtitle": "Balanced stiffness, clean line",
       "imageUrl": "/components/products/Product-2/grid.svg",
+      "parameters": {
+        "Weight": "Medium",
+        "Application": [
+          "Collar",
+          "Cuff"
+        ],
+        "Structure": "Non‑woven",
+        "Stance": "Balanced"
+      },
       "detail": {
         "eyebrow": "Balance Series",
         "title": "Medium 45",
@@ -76,10 +97,20 @@
       }
     },
     {
+      "productKey": "shirt-interlining-woven-60",
       "slug": "woven-60",
       "title": "Woven 60",
       "subtitle": "Crisp stance, premium finish",
       "imageUrl": "/components/products/Product-3/grid.svg",
+      "parameters": {
+        "Weight": "Crisp",
+        "Application": [
+          "Collar",
+          "Cuff"
+        ],
+        "Structure": "Woven",
+        "Stance": "Sharp"
+      },
       "detail": {
         "eyebrow": "Woven Series",
         "title": "Woven 60",

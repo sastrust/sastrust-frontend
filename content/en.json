@@ -200,7 +200,11 @@
       "pagesTitle": "Pages",
       "contactTitle": "Contact",
       "email": "info@sastrust.com",
-      "phone": "+90 000 000 0000"
+      "phone": "+90 000 000 0000",
+      "designedByPrefix": "designed by",
+      "designedByName": "Coreborn",
+      "designedByUrl": "https://coreborn.com",
+      "designedByAriaLabel": "Coreborn website"
     },
     "cookieConsent": {
       "ariaLabel": "Cookie consent dialog",
@@ -242,13 +246,19 @@
         "message": "Message"
       },
       "recaptchaLabel": "reCAPTCHA",
-      "submitText": "Send"
+      "submitText": "Send",
+      "submitSuccessText": "Your message has been received. We will get back to you shortly.",
+      "submitErrorText": "Something went wrong while sending your message. Please try again.",
+      "recaptchaRequiredText": "Please complete the reCAPTCHA verification.",
+      "recaptchaUnavailableText": "reCAPTCHA is not available right now. Please refresh the page."
     },
     "map": {
       "eyebrow": "Location",
       "title": "Workshop & production line",
       "body": "Visits by appointment.",
-      "mapLabel": "Map"
+      "mapLabel": "Open in Google Maps",
+      "mapUrl": "https://maps.app.goo.gl/V5cECyBBsCTskNJu6",
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13997.025206243445!2d28.85840861650757!3d41.06979023353103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa554116ae5d5%3A0x123dfa1855563f96!2sGiyimkent!5e0!3m2!1sen!2str!4v1771186026525!5m2!1sen!2str"
     }
   }
 }

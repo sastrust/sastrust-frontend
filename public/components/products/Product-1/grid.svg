@@ -1,5 +1,6 @@
 <svg width="1600" height="2000" viewBox="0 0 1600 2000" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1600" height="2000" fill="#e7d9c8"/>
-  <rect x="96" y="96" width="1408" height="1808" rx="24" fill="#f6efe6" stroke="#d6c7b7" stroke-width="2"/>
-  <text x="96" y="1952" fill="#5a4a3a" font-family="Arial" font-size="32">Product 1</text>
+  <rect width="1600" height="2000" fill="#e9e1d5"/>
+  <rect x="100" y="100" width="1400" height="1800" rx="26" fill="#f7f2ea" stroke="#d7c8b6" stroke-width="2"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#5e4f3f" font-family="Arial, Helvetica, sans-serif" font-size="140" font-weight="700">1600x2000</text>
+  <text x="50%" y="1900" text-anchor="middle" fill="#8a7a68" font-family="Arial, Helvetica, sans-serif" font-size="36">grid</text>
 </svg>

@@ -14,12 +14,12 @@ export default async function DefaultLocaleLayout({
   const content = await getContent("tr");
 
   return (
-    <>
+    <div lang="tr">
       <Header locale="tr" nav={content.navigation} />
       <main>{children}</main>
       <Footer locale="tr" nav={content.navigation} footer={content.components.footer} />
       <CookieConsent {...content.components.cookieConsent} />
       <BackToTop {...content.components.backToTop} />
-    </>
+    </div>
   );
 }

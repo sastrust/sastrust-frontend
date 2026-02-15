@@ -28,6 +28,7 @@ export default function CtaGridSection({
                     src={item.imageUrl}
                     alt={item.title}
                     fill
+                    loading="eager"
                     sizes="(max-width: 900px) 100vw, 30vw"
                     className="media-img"
                   />
