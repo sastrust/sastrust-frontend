@@ -1,8 +1,11 @@
 // File: src/components/sections/ProductDetailSection.tsx
 // Section: Product Detail
 // Fields (max): title, subtitle, images, description, details, badges
+import Link from "next/link";
 import Image from "next/image";
+import { DEFAULT_LOCALE } from "../../lib/i18n";
 export default function ProductDetailSection({
+  locale,
   eyebrow,
   title,
   body,
@@ -11,6 +14,7 @@ export default function ProductDetailSection({
   mainImageUrl,
   gallery,
 }: {
+  locale: string;
   eyebrow: string;
   title: string;
   body: string;
@@ -19,6 +23,8 @@ export default function ProductDetailSection({
   mainImageUrl: string;
   gallery: string[];
 }) {
+  const base = locale === DEFAULT_LOCALE ? "" : `/${locale}`;
+
   return (
     <section className="section product-detail">
       <div className="container">
@@ -52,17 +58,19 @@ export default function ProductDetailSection({
             </div>
           </div>
           <div className="product-detail-info">
-            <div className="eyebrow">{eyebrow}</div>
-            <h1 className="h1">{title}</h1>
-            <p className="body-lg">{body}</p>
+            <div className="section-copy">
+              <div className="eyebrow">{eyebrow}</div>
+              <h1 className="h1">{title}</h1>
+              <p className="body-lg">{body}</p>
+            </div>
             <div className="product-detail-list">
               {bullets.map((item, index) => (
                 <div key={`${item}-${index}`}>• {item}</div>
               ))}
             </div>
-            <button type="button" className="btn">
+            <Link className="btn" href={base ? `${base}/contact` : "/contact"}>
               {buttonText}
-            </button>
+            </Link>
           </div>
         </div>
       </div>

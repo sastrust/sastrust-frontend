@@ -26,7 +26,7 @@ export default function ProductTeaserSection({
     <section className="section product-teaser">
       <div className="container">
         <div className="product-teaser-grid">
-          <div>
+          <div className="section-copy">
             <div className="eyebrow">{eyebrow}</div>
             <h2 className="h2">{title}</h2>
             <p className="body-lg">{body}</p>

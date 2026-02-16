@@ -47,7 +47,7 @@ export default async function HomePage() {
       {/* Component: ImageGallerySection - /Users/omerozen/Documents/New project/atalay/src/components/sections/ImageGallerySection.tsx */}
       <ImageGallerySection {...components.gallery} />
       {/* Component: CtaGridSection - /Users/omerozen/Documents/New project/atalay/src/components/sections/CtaGridSection.tsx */}
-      <CtaGridSection {...components.ctaGrid} />
+      <CtaGridSection locale="tr" {...components.ctaGrid} />
     </>
   );
 }

@@ -84,6 +84,16 @@ const buildLanguageAlternates = (routePath: string) =>
     return acc;
   }, {});
 
+const buildLanguageAlternatesFromPaths = (
+  routePaths: Partial<Record<Locale, string>>,
+  fallbackRoutePath: string
+) =>
+  SUPPORTED_LOCALES.reduce<Record<string, string>>((acc, locale) => {
+    const routePath = routePaths[locale] || fallbackRoutePath;
+    acc[locale] = absoluteUrl(toLocalePath(locale, routePath));
+    return acc;
+  }, {});
+
 export const normalizeLocale = (locale: string): Locale =>
   SUPPORTED_LOCALES.includes(locale as Locale) ? (locale as Locale) : DEFAULT_LOCALE;
 
@@ -132,14 +142,27 @@ export const buildProductMetadata = ({
   title,
   subtitle,
   imageUrl,
+  localizedSlugs,
 }: {
   locale: Locale;
   slug: string;
   title: string;
   subtitle: string;
   imageUrl: string;
+  localizedSlugs?: Partial<Record<Locale, string>>;
 }): Metadata => {
-  const routePath = `/products/${slug}`;
+  const routePathByLocale = SUPPORTED_LOCALES.reduce<Partial<Record<Locale, string>>>(
+    (acc, localeKey) => {
+      const localizedSlug = localizedSlugs?.[localeKey];
+      if (localizedSlug) {
+        acc[localeKey] = `/products/${localizedSlug}`;
+      }
+      return acc;
+    },
+    {}
+  );
+  const localeSlug = localizedSlugs?.[locale] || slug;
+  const routePath = `/products/${localeSlug}`;
   const fullTitle =
     locale === "tr" ? `${title} | Ürün Detayı | Sastrust` : `${title} | Product Details | Sastrust`;
   const description = subtitle || seoCopy[locale].pages.products.description;
@@ -151,7 +174,7 @@ export const buildProductMetadata = ({
     description,
     alternates: {
       canonical: absoluteUrl(toLocalePath(locale, routePath)),
-      languages: buildLanguageAlternates(routePath),
+      languages: buildLanguageAlternatesFromPaths(routePathByLocale, routePath),
     },
     openGraph: {
       type: "article",

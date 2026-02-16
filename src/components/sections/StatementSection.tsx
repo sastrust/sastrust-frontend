@@ -15,11 +15,13 @@ export default function StatementSection({
   return (
     <section className="section statement">
       <div className="container">
-        <div className="statement-inner">
+        <div className="statement-inner section-copy">
           <div className="eyebrow">{eyebrow}</div>
           <h2 className="h2">{title}</h2>
           <p className="body-lg">{body}</p>
-          <div className="statement-highlight">{highlight}</div>
+          <div className="statement-highlight" lang="en">
+            {highlight}
+          </div>
         </div>
       </div>
     </section>

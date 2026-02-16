@@ -18,7 +18,7 @@ export default function PackagingSection({
     <section className="section packaging">
       <div className="container">
         <div className="packaging-grid">
-          <div>
+          <div className="section-copy">
             <div className="eyebrow">{eyebrow}</div>
             <h2 className="h2">{title}</h2>
             <p className="body-lg">{body}</p>

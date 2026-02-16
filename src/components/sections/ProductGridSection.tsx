@@ -32,7 +32,7 @@ export default function ProductGridSection({
   }[];
 }) {
   const base = locale === DEFAULT_LOCALE ? "" : `/${locale}`;
-  const [isFilterOpen, setIsFilterOpen] = useState(true);
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [sortMode, setSortMode] = useState<"default" | "title-asc" | "title-desc">("default");
   const [selectedFilters, setSelectedFilters] = useState<Record<string, string[]>>({});
 
@@ -128,7 +128,7 @@ export default function ProductGridSection({
     <section className="section product-grid">
       <div className="container">
         <div className="product-grid-head">
-          <div>
+          <div className="section-copy">
             <div className="eyebrow">{eyebrow}</div>
             <h1 className="h1">{title}</h1>
           </div>

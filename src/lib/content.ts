@@ -134,6 +134,7 @@ const normalizeContent = (raw: unknown) => ({
       items: asArray(pick(raw, "components", "ctaGrid", "items"), (item) => ({
         title: asString(pick(item, "title")),
         ctaText: asString(pick(item, "ctaText")),
+        ctaHref: asString(pick(item, "ctaHref")),
         imageUrl: asString(pick(item, "imageUrl")) || asString(pick(item, "imageLabel")),
       })),
     },
@@ -144,6 +145,14 @@ const normalizeContent = (raw: unknown) => ({
       contactTitle: asString(pick(raw, "components", "footer", "contactTitle")),
       email: asString(pick(raw, "components", "footer", "email")),
       phone: asString(pick(raw, "components", "footer", "phone")),
+      instagramUrl: asString(pick(raw, "components", "footer", "instagramUrl")),
+      instagramAriaLabel: asString(
+        pick(raw, "components", "footer", "instagramAriaLabel")
+      ),
+      facebookUrl: asString(pick(raw, "components", "footer", "facebookUrl")),
+      facebookAriaLabel: asString(
+        pick(raw, "components", "footer", "facebookAriaLabel")
+      ),
       designedByPrefix: asString(pick(raw, "components", "footer", "designedByPrefix")),
       designedByName: asString(pick(raw, "components", "footer", "designedByName")),
       designedByUrl: asString(pick(raw, "components", "footer", "designedByUrl")),

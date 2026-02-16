@@ -13,7 +13,7 @@ export default function ValuesIntroSection({
   return (
     <section className="section values-intro">
       <div className="container">
-        <div className="values-intro-inner">
+        <div className="values-intro-inner section-copy">
           <div className="eyebrow">{eyebrow}</div>
           <h2 className="h2">{title}</h2>
           <p className="body-lg">{body}</p>

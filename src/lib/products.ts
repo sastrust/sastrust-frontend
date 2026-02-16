@@ -1,5 +1,4 @@
 // File: src/lib/products.ts
-import { cache } from "react";
 import { readFile } from "fs/promises";
 import path from "path";
 import { notFound } from "next/navigation";
@@ -79,8 +78,10 @@ const normalizeProducts = (raw: unknown) => ({
 });
 
 export type ProductsContent = ReturnType<typeof normalizeProducts>;
+export type ProductItem = ProductsContent["products"][number];
+export type ProductLocaleSlugs = Partial<Record<Locale, string>>;
 
-export const getProducts = cache(async (locale: string): Promise<ProductsContent> => {
+export const getProducts = async (locale: string): Promise<ProductsContent> => {
   const normalized = SUPPORTED_LOCALES.includes(locale as Locale)
     ? (locale as Locale)
     : DEFAULT_LOCALE;
@@ -92,4 +93,42 @@ export const getProducts = cache(async (locale: string): Promise<ProductsContent
   } catch {
     notFound();
   }
-});
+};
+
+const getLocalizedProductSlugMap = async (): Promise<
+  Record<string, ProductLocaleSlugs>
+> => {
+  const localeEntries = await Promise.all(
+    SUPPORTED_LOCALES.map(async (locale) => {
+      const products = await getProducts(locale);
+      return { locale, products: products.products };
+    })
+  );
+
+  return localeEntries.reduce<Record<string, ProductLocaleSlugs>>((acc, entry) => {
+    entry.products.forEach((product) => {
+      if (!product.productKey || !product.slug) {
+        return;
+      }
+
+      if (!acc[product.productKey]) {
+        acc[product.productKey] = {};
+      }
+
+      acc[product.productKey][entry.locale] = product.slug;
+    });
+
+    return acc;
+  }, {});
+};
+
+export const getProductLocaleSlugs = async (
+  productKey: string
+): Promise<ProductLocaleSlugs> => {
+  if (!productKey) {
+    return {};
+  }
+
+  const mapByProductKey = await getLocalizedProductSlugMap();
+  return mapByProductKey[productKey] || {};
+};

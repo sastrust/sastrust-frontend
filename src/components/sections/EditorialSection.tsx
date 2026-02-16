@@ -17,10 +17,10 @@ export default function EditorialSection({
     <section className="section editorial">
       <div className="container">
         <div className="editorial-grid">
-          <div>
+          <div className="section-copy">
             <div className="eyebrow">{eyebrow}</div>
             <h2 className="h2">{title}</h2>
-            <p className="editorial-body">{body}</p>
+            <p className="body-lg editorial-body">{body}</p>
           </div>
           <div className="editorial-media">
             {/* Replace with Image component when content is wired. */}

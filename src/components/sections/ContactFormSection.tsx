@@ -183,7 +183,7 @@ export default function ContactFormSection({
 
       <div className="container">
         <div className="contact-grid">
-          <div>
+          <div className="section-copy">
             <div className="eyebrow">{eyebrow}</div>
             <h2 className="h2">{title}</h2>
             <p className="body-lg">{body}</p>

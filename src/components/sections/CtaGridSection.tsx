@@ -1,17 +1,23 @@
 // File: src/components/sections/CtaGridSection.tsx
 // Section: CTA Grid
 // Fields (max): title, items[{ title, image, imageAlt, ctaText, ctaHref }]
+import Link from "next/link";
 import Image from "next/image";
+import { DEFAULT_LOCALE } from "../../lib/i18n";
 
 export default function CtaGridSection({
+  locale,
   eyebrow,
   title,
   items,
 }: {
+  locale: string;
   eyebrow: string;
   title: string;
-  items: { title: string; ctaText: string; imageUrl: string }[];
+  items: { title: string; ctaText: string; imageUrl: string; ctaHref?: string }[];
 }) {
+  const base = locale === DEFAULT_LOCALE ? "" : `/${locale}`;
+
   return (
     <section className="section cta-grid">
       <div className="container">
@@ -35,9 +41,20 @@ export default function CtaGridSection({
                 ) : null}
               </div>
               <h3 className="h3">{item.title}</h3>
-              <a className="btn btn-ghost" href="#">
+              <Link
+                className="btn btn-ghost"
+                href={
+                  item.ctaHref
+                    ? item.ctaHref.startsWith("/")
+                      ? `${base}${item.ctaHref}`
+                      : item.ctaHref
+                    : base
+                      ? `${base}/contact`
+                      : "/contact"
+                }
+              >
                 {item.ctaText}
-              </a>
+              </Link>
             </div>
           ))}
         </div>
