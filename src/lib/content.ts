@@ -37,6 +37,15 @@ const normalizeContent = (raw: unknown) => ({
     hero: {
       title: asString(pick(raw, "components", "hero", "title")),
       imageUrl: asString(pick(raw, "components", "hero", "imageUrl")),
+      slides: asArray(pick(raw, "components", "hero", "slides"), (slide) => ({
+        variant: asString(pick(slide, "variant")),
+        eyebrow: asString(pick(slide, "eyebrow")),
+        titleLines: asArray(pick(slide, "titleLines"), (line) => asString(line)),
+        bodyLines: asArray(pick(slide, "bodyLines"), (line) => asString(line)),
+        imageUrl: asString(pick(slide, "imageUrl")),
+        imageAlt: asString(pick(slide, "imageAlt")),
+        logoUrl: asString(pick(slide, "logoUrl")),
+      })),
     },
     origin: {
       body: asString(pick(raw, "components", "origin", "body")),

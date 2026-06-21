@@ -13,8 +13,67 @@
   },
   "components": {
     "hero": {
-      "title": "Behind the seen — gömleğin duruşunu görünmeden kurarız.",
-      "imageUrl": "/components/hero/hero-1.svg"
+      "slides": [
+        {
+          "titleLines": [
+            "Original Sastrust",
+            "Interlining & Top Fuse"
+          ],
+          "bodyLines": [
+            "At SASTRUST, we focus on what's behind excellence",
+            "We work towards creating something perfect",
+            "A simple yet powerful approach.",
+            "Concerned with the small details you don't see but feel Fool the quality behind, foel the expertise behind",
+            "The details we don't see shape how we understand the world",
+            "True experts work those hidden details.",
+            "Our touch may not be obvious, but it's folt where it matters most"
+          ],
+          "imageUrl": "/components/hero/sastrust-slider-1-transparent.png",
+          "imageAlt": "Flowing white Sastrust interlining fabric",
+          "logoUrl": "/components/hero/sastrust-logo-1.svg"
+        },
+        {
+          "variant": "details",
+          "eyebrow": "Details define the object.",
+          "titleLines": [],
+          "bodyLines": [
+            "Exceptional garments are shaped by the details beneath the surface",
+            "Our top fuses provide the structure, comfort, and refinement that professionals recognize in every finished piece."
+          ],
+          "imageUrl": "/components/hero/slider2-real.png",
+          "imageAlt": "Shirt collar, cuff and tailoring tools on a felt-textured surface",
+          "logoUrl": ""
+        },
+        {
+          "variant": "technology",
+          "titleLines": [
+            "Interfacing quality with technology"
+          ],
+          "bodyLines": [
+            "We combine advanced materials with precision engineering to deliver reliable,",
+            "consistent top fuse performance. Every solution is designed to",
+            "support modern garment production with efficiency and confidence."
+          ],
+          "imageUrl": "/components/hero/sastrust-slider-3-shirt.png",
+          "imageAlt": "White shirt silhouette on a soft gradient field",
+          "logoUrl": ""
+        },
+        {
+          "variant": "perfection",
+          "titleLines": [
+            "Feel the Dedication to Perfection"
+          ],
+          "bodyLines": [
+            "Perfection is achieved through expertise,",
+            "care, and uncompromising standards.",
+            "From development to delivery,",
+            "every product reflects our commitment to quality."
+          ],
+          "imageUrl": "/components/hero/sastrust-slider-4-dedication.png",
+          "imageAlt": "Cropped seated figure in white shirt on the right side",
+          "logoUrl": ""
+        }
+      ]
     },
     "editorial": {
       "eyebrow": "Neden Tela",
@@ -23,10 +82,10 @@
       "imageUrl": "/components/editorial/editorial-1.svg"
     },
     "statement": {
-      "eyebrow": "Duruş",
-      "title": "İyi bir gömlek, içten desteklenir.",
-      "body": "Biz kumaşın değil, bitmiş gömleğin kalitesini yükseltiriz. Sertlik değil; doğru destek, temiz çizgi ve tutarlılık üretiriz.",
-      "highlight": "Behind the seen"
+      "eyebrow": "STANCE",
+      "title": "A great shirt is supported from the inside.",
+      "body": "We don't change the fabric - we elevate the finished shirt. Not stiffness, but the right support, clean lines, and consistency.",
+      "highlight": "BEHIND THE SEEN"
     },
     "valuesGrid": {
       "eyebrow": "Temel Değerler",
@@ -50,11 +109,11 @@
       ]
     },
     "productTeaser": {
-      "eyebrow": "Ürün Ailesi",
-      "title": "Gömlek telaları: hafiften tok duruşa",
-      "body": "Yaka, manşet ve pat için farklı gramaj ve karakterlerde telalar. Üretim tarzınıza uygun seçenekler.",
-      "ctaText": "Ürünleri keşfet",
-      "imageUrl": "/components/product-teaser/teaser-1.svg"
+      "eyebrow": "PRODUCT FAMILY",
+      "title": "Interlinings for every shirt build",
+      "body": "From lightweight to crisp, tailored for collars, cuffs, and plackets.",
+      "ctaText": "EXPLORE PRODUCTS",
+      "imageUrl": "/components/product-teaser/sastrust-iron.png"
     },
     "transparency": {
       "eyebrow": "Yapı",
@@ -221,22 +280,35 @@
       "text": "Başa dön"
     },
     "origin": {
-      "body": "Bizim hikayemiz, atölyeye geri döndüğümüzde başladı. Büyük markalar için çalışarak gömleğin gerçek kalitesini belirleyen şeyin görünmeyen katmanlar olduğunu öğrendik. Lüks bir duruşu erişilebilir kılmak için, telayı görünmez ama vazgeçilmez bir yapı taşı olarak ele aldık. Çünkü herkes, yakası düzgün duran, çizgisi net bir gömleği hak eder."
+      "title": "BEHIND THE SEEN",
+      "body": "DETAILS DEFINE THE OBJECT.\nTHEY HIDE BEHIND THE OBVIOUS,\nPROS SEE THEM. READ THEM. FEEL THE DEDICATION TO PERFECTION.\nFINISHING THINGS PERFECTLY TO BE SEEN AS PERFECT AS IT IS"
     },
     "valuesThree": {
-      "title": "Değerlerimiz",
+      "title": "",
       "items": [
         {
-          "title": "Kalite",
-          "body": "Kalite bir ayrıcalık olmamalı. Telalarımız doğru formu ve dayanımı üretmek için seçilmiş malzemelerle hazırlanır."
+          "title": "INNOVATION",
+          "subtitle": "BEHIND",
+          "accent": "red",
+          "body": "We design products that go beyond expectations by turning unseen insights into purposeful innovation and measurable impact."
         },
         {
-          "title": "Sürdürülebilirlik",
-          "body": "Mümkün olduğunda çevresel etkisi düşük materyaller ve üretim pratikleri kullanırız."
+          "title": "PROFESSIONALS",
+          "subtitle": "BEHIND",
+          "accent": "green",
+          "body": "Behind every confident decision stands expertise, dedication, and integrity. We bring together deep knowledge and human insight to create trust where it matters most."
         },
         {
-          "title": "Erişilebilirlik",
-          "body": "Güçlü duruşu makul maliyetle sunarız. Üretici için verimli, marka için erişilebilir çözümler üretiriz."
+          "title": "TECHNOLOGY",
+          "subtitle": "BEHIND",
+          "accent": "blue",
+          "body": "Technology is most powerful when it works beyond sight. We leverage intelligent solutions and advanced capabilities to reveal hidden potential and enable smarter outcomes."
+        },
+        {
+          "title": "EXCELLENCE",
+          "subtitle": "BEHIND",
+          "accent": "burgundy",
+          "body": "Excellence lies in the details that often go unseen. Through precision, consistency, and an uncompromising commitment to quality, we deliver outcomes that make a lasting impact."
         }
       ]
     },

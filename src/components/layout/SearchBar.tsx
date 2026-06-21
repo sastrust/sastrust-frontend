@@ -5,6 +5,7 @@
 import Link from "next/link";
 import { useMemo, useRef, useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { Search, X } from "lucide-react";
 import type { SearchItem } from "../../lib/search";
 
 export default function SearchBar({
@@ -14,6 +15,7 @@ export default function SearchBar({
   items,
   noResultsText,
   onNavigate,
+  variant = "field",
 }: {
   locale: string;
   placeholder: string;
@@ -21,9 +23,11 @@ export default function SearchBar({
   items: SearchItem[];
   noResultsText: string;
   onNavigate?: () => void;
+  variant?: "field" | "icon";
 }) {
   const router = useRouter();
   const rootRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const [query, setQuery] = useState("");
   const [isOpen, setIsOpen] = useState(false);
 
@@ -54,6 +58,12 @@ export default function SearchBar({
 
   const showDropdown = isOpen && normalizedQuery.length > 0;
 
+  useEffect(() => {
+    if (variant === "icon" && isOpen) {
+      inputRef.current?.focus();
+    }
+  }, [isOpen, variant]);
+
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (results[0]?.href) {
@@ -70,10 +80,11 @@ export default function SearchBar({
     onNavigate?.();
   };
 
-  return (
-    <div className="search-box" ref={rootRef}>
+  const searchForm = (
+    <>
       <form role="search" aria-label={placeholder} className="search" onSubmit={handleSubmit}>
         <input
+          ref={inputRef}
           type="search"
           name="q"
           value={query}
@@ -109,6 +120,29 @@ export default function SearchBar({
           )}
         </div>
       ) : null}
+    </>
+  );
+
+  if (variant === "icon") {
+    return (
+      <div className="search-box search-box-icon" ref={rootRef}>
+        <button
+          type="button"
+          className="search-trigger"
+          aria-label={placeholder}
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen((open) => !open)}
+        >
+          {isOpen ? <X aria-hidden="true" /> : <Search aria-hidden="true" />}
+        </button>
+        {isOpen ? <div className="search-popover">{searchForm}</div> : null}
+      </div>
+    );
+  }
+
+  return (
+    <div className="search-box" ref={rootRef}>
+      {searchForm}
     </div>
   );
 }

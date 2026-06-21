@@ -13,8 +13,67 @@
   },
   "components": {
     "hero": {
-      "title": "Behind the seen — we build the shirt’s stance from within.",
-      "imageUrl": "/components/hero/hero-1.svg"
+      "slides": [
+        {
+          "titleLines": [
+            "Original Sastrust",
+            "Interlining & Top Fuse"
+          ],
+          "bodyLines": [
+            "At SASTRUST, we focus on what's behind excellence",
+            "We work towards creating something perfect",
+            "A simple yet powerful approach.",
+            "Concerned with the small details you don't see but feel Fool the quality behind, foel the expertise behind",
+            "The details we don't see shape how we understand the world",
+            "True experts work those hidden details.",
+            "Our touch may not be obvious, but it's folt where it matters most"
+          ],
+          "imageUrl": "/components/hero/sastrust-slider-1-transparent.png",
+          "imageAlt": "Flowing white Sastrust interlining fabric",
+          "logoUrl": "/components/hero/sastrust-logo-1.svg"
+        },
+        {
+          "variant": "details",
+          "eyebrow": "Details define the object.",
+          "titleLines": [],
+          "bodyLines": [
+            "Exceptional garments are shaped by the details beneath the surface",
+            "Our top fuses provide the structure, comfort, and refinement that professionals recognize in every finished piece."
+          ],
+          "imageUrl": "/components/hero/slider2-real.png",
+          "imageAlt": "Shirt collar, cuff and tailoring tools on a felt-textured surface",
+          "logoUrl": ""
+        },
+        {
+          "variant": "technology",
+          "titleLines": [
+            "Interfacing quality with technology"
+          ],
+          "bodyLines": [
+            "We combine advanced materials with precision engineering to deliver reliable,",
+            "consistent top fuse performance. Every solution is designed to",
+            "support modern garment production with efficiency and confidence."
+          ],
+          "imageUrl": "/components/hero/sastrust-slider-3-shirt.png",
+          "imageAlt": "White shirt silhouette on a soft gradient field",
+          "logoUrl": ""
+        },
+        {
+          "variant": "perfection",
+          "titleLines": [
+            "Feel the Dedication to Perfection"
+          ],
+          "bodyLines": [
+            "Perfection is achieved through expertise,",
+            "care, and uncompromising standards.",
+            "From development to delivery,",
+            "every product reflects our commitment to quality."
+          ],
+          "imageUrl": "/components/hero/sastrust-slider-4-dedication.png",
+          "imageAlt": "Cropped seated figure in white shirt on the right side",
+          "logoUrl": ""
+        }
+      ]
     },
     "editorial": {
       "eyebrow": "Why Interlining",
@@ -23,10 +82,10 @@
       "imageUrl": "/components/editorial/editorial-1.svg"
     },
     "statement": {
-      "eyebrow": "Stance",
+      "eyebrow": "STANCE",
       "title": "A great shirt is supported from the inside.",
-      "body": "We don’t change the fabric — we elevate the finished shirt. Not stiffness, but the right support, clean lines, and consistency.",
-      "highlight": "Behind the seen"
+      "body": "We don't change the fabric - we elevate the finished shirt. Not stiffness, but the right support, clean lines, and consistency.",
+      "highlight": "BEHIND THE SEEN"
     },
     "valuesGrid": {
       "eyebrow": "Core Values",
@@ -54,7 +113,7 @@
       "title": "Interlinings for every shirt build",
       "body": "From lightweight to crisp, tailored for collars, cuffs, and plackets.",
       "ctaText": "Explore products",
-      "imageUrl": "/components/product-teaser/teaser-1.svg"
+      "imageUrl": "/components/product-teaser/sastrust-iron.png"
     },
     "transparency": {
       "eyebrow": "Structure",
@@ -221,22 +280,35 @@
       "text": "Top"
     },
     "origin": {
-      "body": "We started when we brought our work back home. After years inside major brands, we learned that the true quality of a shirt is set by the unseen layers. We treat interlining as a silent but essential structure that makes premium stance accessible. Because everyone deserves a shirt with a clean line and a confident collar."
+      "title": "BEHIND THE SEEN",
+      "body": "DETAILS DEFINE THE OBJECT.\nTHEY HIDE BEHIND THE OBVIOUS,\nPROS SEE THEM. READ THEM. FEEL THE DEDICATION TO PERFECTION.\nFINISHING THINGS PERFECTLY TO BE SEEN AS PERFECT AS IT IS"
     },
     "valuesThree": {
-      "title": "Our values",
+      "title": "",
       "items": [
         {
-          "title": "Quality",
-          "body": "Quality shouldn’t be a luxury. We use carefully selected materials to deliver reliable form and durability."
+          "title": "INNOVATION",
+          "subtitle": "BEHIND",
+          "accent": "red",
+          "body": "We design products that go beyond expectations by turning unseen insights into purposeful innovation and measurable impact."
         },
         {
-          "title": "Sustainability",
-          "body": "Whenever possible, we choose lower‑impact materials and responsible production practices."
+          "title": "PROFESSIONALS",
+          "subtitle": "BEHIND",
+          "accent": "green",
+          "body": "Behind every confident decision stands expertise, dedication, and integrity. We bring together deep knowledge and human insight to create trust where it matters most."
         },
         {
-          "title": "Accessibility",
-          "body": "We make a premium stance attainable by keeping production efficient and costs honest."
+          "title": "TECHNOLOGY",
+          "subtitle": "BEHIND",
+          "accent": "blue",
+          "body": "Technology is most powerful when it works beyond sight. We leverage intelligent solutions and advanced capabilities to reveal hidden potential and enable smarter outcomes."
+        },
+        {
+          "title": "EXCELLENCE",
+          "subtitle": "BEHIND",
+          "accent": "burgundy",
+          "body": "Excellence lies in the details that often go unseen. Through precision, consistency, and an uncompromising commitment to quality, we deliver outcomes that make a lasting impact."
         }
       ]
     },

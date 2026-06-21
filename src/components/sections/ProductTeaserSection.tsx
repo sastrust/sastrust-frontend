@@ -24,28 +24,27 @@ export default function ProductTeaserSection({
 
   return (
     <section className="section product-teaser">
-      <div className="container">
-        <div className="product-teaser-grid">
-          <div className="section-copy">
-            <div className="eyebrow">{eyebrow}</div>
-            <h2 className="h2">{title}</h2>
-            <p className="body-lg">{body}</p>
-            <Link className="btn" href={base ? `${base}/products` : "/products"}>
+      <div className="product-teaser-layout">
+        <div className="product-teaser-visual" aria-hidden="true">
+          {imageUrl ? (
+            <Image
+              src={imageUrl}
+              alt=""
+              fill
+              sizes="(max-width: 900px) 100vw, 46vw"
+              className="product-teaser-image"
+            />
+          ) : null}
+        </div>
+
+        <div className="product-teaser-copy-wrap">
+          <div className="product-teaser-copy section-copy">
+            <div className="eyebrow product-teaser-eyebrow">{eyebrow}</div>
+            <h2 className="product-teaser-title">{title}</h2>
+            <p className="product-teaser-body">{body}</p>
+            <Link className="product-teaser-btn" href={base ? `${base}/products` : "/products"}>
               {ctaText}
             </Link>
-          </div>
-          <div>
-            <div className="media-frame">
-              {imageUrl ? (
-                <Image
-                  src={imageUrl}
-                  alt={title}
-                  fill
-                  sizes="(max-width: 900px) 100vw, 40vw"
-                  className="media-img"
-                />
-              ) : null}
-            </div>
           </div>
         </div>
       </div>

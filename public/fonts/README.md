@@ -1,11 +1,9 @@
 # Fonts
 
-Put licensed font files in this folder with these exact names:
+The local Sastrust typography files used by `src/app/globals.css` are:
 
-- `AcuminVariableConcept-Bold.woff2`
-- `AcuminVariableConcept-Medium.woff2`
-- `ProximaNova-Regular.woff2`
+- `AcuminPro-Regular.otf`
+- `AcuminPro-Bold.otf`
 
-They are referenced by `/Users/omerozen/Documents/New project/atalay/src/app/globals.css`.
-
-Alternative: if you use Adobe Fonts CDN, set `NEXT_PUBLIC_ADOBE_KIT_ID` in `.env.local`.
+They are bundled with the site, so the header and page typography do not depend on
+an external font service. These full font files include the Turkish character set.

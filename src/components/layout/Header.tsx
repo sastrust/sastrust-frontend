@@ -114,33 +114,25 @@ export default async function Header({
     locale === "tr" ? "Sonuç bulunamadı" : "No results found";
 
   return (
-    <header>
-      {/* Header shell: brand/logo area + nav + search + language switcher. */}
-      <div className="container">
-        <div className="header-row">
-          <div className="brand">
-            {/* Brand/Logo placeholder */}
-            <Link href={base || "/"} className="brand-mark">
-              <span className="brand-logo brand-logo-dark">
-                <Image
-                  src="/sastrust-beige-header.png"
-                  alt="Sastrust"
-                  width={874}
-                  height={179}
-                  className="brand-logo-image"
-                />
-              </span>
-              <span className="brand-logo brand-logo-light">
-                <Image
-                  src="/sastrust-white-header.png"
-                  alt="Sastrust"
-                  width={914}
-                  height={188}
-                  className="brand-logo-image"
-                />
-              </span>
-            </Link>
-          </div>
+    <header className="site-header">
+      <div className="header-tagline">BEHIND THE SEEN</div>
+
+      <div className="header-logo-band">
+        <Link href={base || "/"} className="brand-mark" aria-label="Sastrust">
+          <Image
+            src="/sastrust-beige-header.png"
+            alt="Sastrust"
+            width={874}
+            height={179}
+            priority
+            className="brand-logo-image"
+          />
+        </Link>
+      </div>
+
+      <div className="header-nav-band">
+        <div className="container header-nav-row">
+          <span className="header-nav-balance" aria-hidden="true" />
           <NavMenu
             locale={locale}
             ariaLabel={nav.primaryNavAriaLabel}
@@ -161,6 +153,7 @@ export default async function Header({
               buttonText={nav.searchButton}
               items={searchItems}
               noResultsText={searchNoResultsText}
+              variant="icon"
             />
             <LanguageSwitcher
               ariaLabel={nav.languageSelectorAriaLabel}
